@@ -3,7 +3,7 @@
 import React, {useState, useEffect} from 'react';
 import {useRouter} from "next/router";
 
-import {isObjectEmpty, removeObjectFromArrayByKey} from "../../../helpers/Helpers";
+import {isEmpty, removeObjectFromArrayByKey} from "../../../helpers/Helpers";
 
 import actions from "../../../pages/api/Modules/Posts/DataGrid/PostsDataGrid";
 import {GET_POSTS_DATA_GRID_ACTION} from "../../../pages/api/Modules/Posts/DataGrid/ActionsTypes/PostsDataGridActionsTypes";
@@ -94,18 +94,18 @@ const MainTable = ({tableRef}) => {
 
     const getTablePagination = () => {
         return paginationFactory({
-            totalSize: posts.length,
-            sizePerPage: 20,
-            paginationSize: 4,
+            // totalSize: posts.length,
+            // sizePerPage: 20,
+            // paginationSize: 4,
             sizePerPageList: [20, 40, 80, 100],
-            alwaysShowAllBtns: true
+            // alwaysShowAllBtns: true
         });
     }
 
     //UI
     return (
         <div className={'mt-5'}>
-            {!isObjectEmpty(posts) ?
+            {!isEmpty(posts) ?
                 <BootstrapTable
                     ref={tableRef}
                     keyField='id'
