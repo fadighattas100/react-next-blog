@@ -1,0 +1,3 @@
+'use strict';
+
+export const GET_POSTS_DATA_GRID_REQUEST_API = 'GET_POSTS_DATA_GRID_REQUEST_API';
