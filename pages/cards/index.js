@@ -53,7 +53,7 @@ const Index = ({}) => {
                             </div>
                         })
                         :
-                        <div className={'col-12 mt-5'}><p>No post's are selected go <Link href={'/'}>home</Link></p></div>
+                        <div className={'col-12 mt-5'}><p>No post's are selected <Link href={'/'}>home</Link></p></div>
                     }
                 </div>
         </MasterLayout>
