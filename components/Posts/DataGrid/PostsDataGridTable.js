@@ -98,7 +98,7 @@ const MainTable = ({tableRef}) => {
             // sizePerPage: 20,
             // paginationSize: 4,
             sizePerPageList: [20, 40, 80, 100],
-            // alwaysShowAllBtns: true
+            alwaysShowAllBtns: true
         });
     }
 
