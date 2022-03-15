@@ -14,7 +14,7 @@ import paginationFactory from 'react-bootstrap-table2-paginator';
 
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
-const MainTable = ({tableRef}) => {
+const PostsDataGridTable = ({tableRef}) => {
 
     //Router
     const router = useRouter();
@@ -120,9 +120,9 @@ const MainTable = ({tableRef}) => {
     );
 }
 
-MainTable.defaultProps =
+PostsDataGridTable.defaultProps =
 {
     tableRef: React.createRef(),
 }
 
-export default MainTable;
+export default PostsDataGridTable;
